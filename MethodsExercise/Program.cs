@@ -8,7 +8,7 @@
             string name = Console.ReadLine();
 
             Console.WriteLine($"Hello {name}! Today we will be getting to know you through a series of questions. There are no right or wrong answers, just answer honestly!\n");
-            Console.WriteLine("When you are ready to begin, press any key to begin");
+            Console.WriteLine("When you are ready, press any key to start");
             Console.ReadKey();
             Console.WriteLine("What is your favorite TV show?");
             string tvShow = Console.ReadLine();
