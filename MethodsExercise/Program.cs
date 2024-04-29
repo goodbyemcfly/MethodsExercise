@@ -2,6 +2,26 @@
 {
     public class Program
     {
+        // Methods for Assignment #1
+        public static void GreetUser(string name) 
+        {
+            Console.WriteLine($"Hello {name}!");
+        }
+        public static void JudgeTvShow(string tvShow)
+        {
+            Console.WriteLine($"Really?? {tvShow}??");
+        }
+
+        // Methods for Assignment #2
+        public static int Sum(int num1, int num2)
+        {
+            return num1 + num2;
+        }
+        public static int Multiply(int number1, int number2)
+        {
+            return number1 * number2;
+        }
+
         static void Main(string[] args)
         {
 
@@ -9,14 +29,14 @@
 
             Console.WriteLine("What is your name?");
             string name = Console.ReadLine();
-
-            Console.WriteLine($"Hello {name}! Today we will be getting to know you through a series of questions. There are no right or wrong answers, just answer honestly!\n");
-            Console.WriteLine("When you are ready, press any key to start");
+            GreetUser(name);
+            Console.WriteLine("Today we will be getting to know you through a series of questions. There are no right or wrong answers, just answer honestly!\nWhen you are ready, press any key to start");
             Console.ReadKey();
 
             Console.WriteLine("What is your favorite TV show?");
             string tvShow = Console.ReadLine();
-            Console.WriteLine($"Really? {tvShow}?? I know I said there are no wrong answers but... Nevermind. This is a judgement free zone. Let's continue.");
+            JudgeTvShow(tvShow);
+            Console.WriteLine("I know I said there are no wrong answers but... Nevermind. This is a judgement free zone. Let's continue.");
 
             Console.WriteLine("Next question.\n What is your favorite band?");
             string band = Console.ReadLine();
@@ -41,15 +61,6 @@
             Console.WriteLine("We have no further questions. Thank you for your participation, your answers have been recorded!");
 
             // Assignment #2 
-
-            static int Sum(int num1, int num2)
-            {
-                return num1 + num2;
-            }
-            static int Multiply(int number1, int number2)
-            {
-                return number1 * number2;
-            }
 
             Console.WriteLine("Enter number to add");
             int num1 = int.Parse(Console.ReadLine());
