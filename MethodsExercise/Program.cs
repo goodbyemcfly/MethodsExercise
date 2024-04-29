@@ -2,15 +2,6 @@
 {
     public class Program
     {
-        public static int Sum(int num1, int num2)
-        {
-            return num1 + num2;
-        }
-        public static int Multiply(int number1, int number2)
-        {
-            return number1 * number2;
-        }
-
         static void Main(string[] args)
         {
 
@@ -47,18 +38,27 @@
                 Console.WriteLine($"I'm sorry, '{userInput}' was not one of the provided options. While we do appreciate creativity, we are very disapointed that you have chosen to answer this way.");
             }
 
-            Console.WriteLine("We have no further questions. Thank you for your participation, your answers have been recorded!"); 
+            Console.WriteLine("We have no further questions. Thank you for your participation, your answers have been recorded!");
 
             // Assignment #2 
 
-            Console.WriteLine("Enter number to add.");
+            static int Sum(int num1, int num2)
+            {
+                return num1 + num2;
+            }
+            static int Multiply(int number1, int number2)
+            {
+                return number1 * number2;
+            }
+
+            Console.WriteLine("Enter number to add");
             int num1 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter another number to add to your previous number.");
+            Console.WriteLine("Enter another number to add to your previous number");
             int num2 = int.Parse(Console.ReadLine());
 
             int sum = Sum(num1, num2);
-            Console.WriteLine(sum);
+            Console.WriteLine($"Here is your equation: {num1} + {num2} = {sum}");
 
             Console.WriteLine("Enter number to multiply.");
             int number1 = int.Parse(Console.ReadLine());
@@ -67,7 +67,7 @@
             int number2 = int.Parse(Console.ReadLine());
 
             int answer = Multiply(number1, number2);
-            Console.WriteLine(answer);
+            Console.WriteLine($"Here is you equation: {number1} * {number2} = {answer}");
         }
     }
 }
